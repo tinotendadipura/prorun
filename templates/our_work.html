@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+ {% load static  %}
+
+ {% block title %}
+ 
+Our Work | Prorun 
+
+{% endblock title %}
+
+
+
+{% block content %}
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title-layout1 page-title-light bg-overlay text-center">
+      <div class="bg-img"><img src="{%static './assets/images/work/bg.jpeg'%}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="pagetitle__heading mb-0">Gallery</h1>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+    <div class="breadcrumb-area border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav>
+              <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="about-us.html">Company</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+              </ol>
+            </nav>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.breadcrumb-area -->
+
+    <!-- ========================
+     gallery 
+    =========================== -->
+    <section class="gallery pt-130 pb-90">
+      <div class="container">
+        <div class="row">
+		{% for image in all_images %}
+		 {% if image %}
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="gallery-img">
+              <a class="popup-gallery-item" href="{{image.display_image.url}}"><i class="fas fa-plus"></i></a>
+              <img src="{{image.display_image.url}}">
+            </div><!-- /.gallery-img -->
+          </div><!-- /.col-lg-4 -->
+          {% endif %}
+		 {% endfor %} 
+		  
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <button class="btn btn__primary loadMoreGallery">Load More</button>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.gallery -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+   {% endblock content %}

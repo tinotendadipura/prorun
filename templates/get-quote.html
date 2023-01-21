@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+ {% load static  %}
+
+ {% block title %}
+ 
+Get Quote | Prorun 
+
+{% endblock title %}
+
+
+
+{% block content %}
+    
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title-layout1 page-title-light bg-overlay text-center">
+      <div class="bg-img"><img src="{%static  './assets/images/about/bg.jpeg'%}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="pagetitle__heading">Get A Quote</h1>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <div class="breadcrumb-area border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav>
+              <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Get A Quote</li>
+              </ol>
+            </nav>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.breadcrumb-area -->
+
+    <section class="pb-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <aside class="sidebar has-marign-right sticky-top mb-30" >
+              <div class="widget widget-help bg-overlay bg-overlay-primary" >
+                <div class="bg-img"><img src="{%static './assets/images/banners/slide_1.jpg'%}" alt="background"></div>
+                <div class="widget-content">
+                  <h4 class="widget__title">Tailored Solutions For Your Security Priorities</h4>
+                  <p class="widget__desc mb-50">We will design, install, and upgrade solutions to meet
+                    business specific needs and budgets from large.
+                  </p>
+                  <a href="tel:+201061245741" class="phone__number">
+                    <i class="icon-phone"></i> <span>263 719135161</span>
+                  </a>
+                  <a href="#" class="btn btn__white btn__xl btn__block justify-content-between">
+                    <span>Get Started Now</span>
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-help -->
+              <div class="widget widget-download">
+                <div class="widget-content">
+                  <h4 class="widget__title">Download Brochure</h4>
+                  <a href="#" class="btn btn__secondary btn__block mb-20">
+                    <i class="icon-download"></i>
+                    <span>Company Report 2022</span>
+                  </a>
+                  <a href="#" class="btn btn__primary btn__block">
+                    <i class="icon-download"></i>
+                    <span>Company Brochure</span>
+                  </a>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-download -->
+            </aside><!-- /.sidebar -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <section class="contact-layout4 py-0">
+              <div class="contact-panel">
+                <form class="contact-panel__form" method="post"  id="contactForm">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h4 class="contact-panel__title">Request A Quote</h4>
+                      <p class="contact-panel__desc mb-30">Please complete the form below, to request a quote, and
+                        we’ll
+                        be in touch. Or you can call us <strong class="color-secondary">263 719135161, 0771135161</strong> and our
+                        specialists will provide the
+                        necessary help!
+                      </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group float-label">
+                        <label for="homeBussiness">Home Or Business?</label>
+                        <select id="homeBussiness" class="form-control">
+                          <option>For Home</option>
+                          <option>For Business</option>
+                        </select>
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group float-label">
+                        <label for="Industry">Industry:</label>
+                        <select id="Industry" class="form-control">
+                          <option>Commercial Buildings</option>
+                          <option>Commercial Buildings</option>
+                        </select>
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group float-label">
+                        <label for="size">System Size:</label>
+                        <select id="size" class="form-control">
+                          <option>Small (1-5 locations)</option>
+                          <option>large (6-10 locations)</option>
+                        </select>
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group float-label">
+                        <label for="own">Own Or Rent?</label>
+                        <select id="own" class="form-control">
+                          <option>I'm representing occupant</option>
+                          <option>other</option>
+                        </select>
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-12">
+                      <div class="form-group mb-10">
+                        <label class="mb-20">System Of Interest:</label>
+                        <div>
+                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                            <input type="checkbox" class="custom-control-input" id="Intrusion">
+                            <label class="custom-control-label" for="Intrusion">Barbed Wire Fencing</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                            <input type="checkbox" class="custom-control-input" id="Surveillance">
+                            <label class="custom-control-label" for="Surveillance">Diamond Mesh</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                            <input type="checkbox" class="custom-control-input" id="Integration">
+                            <label class="custom-control-label" for="Integration">Bonox Fencing</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                            <input type="checkbox" class="custom-control-input" id="Monitoring">
+                            <label class="custom-control-label" for="Monitoring">Welded Mesh</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                            <input type="checkbox" class="custom-control-input" id="fire">
+                            <label class="custom-control-label" for="fire">Hexagonal Wire</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                            <input type="checkbox" class="custom-control-input" id="Control">
+                            <label class="custom-control-label" for="Control">Field Fencing</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                            <input type="checkbox" class="custom-control-input" id="Other">
+                            <label class="custom-control-label" for="Other">Other</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- /.col-lg-12 -->
+                    <div class="col-12">
+                      <label class="mb-20">Kindly provide your personal informations below :</label>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Company Name">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Country">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="City">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Address">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Zipcode">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Best Installation Times">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea class="form-control" placeholder="How can we help?!!"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn__secondary btn__xl">
+                        <i class="icon-arrow-right icon-filled"></i> <span>Submit Request</span>
+                      </button>
+                      <p class="mt-30 mb-0">By submitting your information, you agree that our specialists may contact
+                        me via text messages or phone calls and to use your data in accordance with our Privacy Policy.
+                      </p>
+                      <div class="contact-result"></div>
+                    </div>
+                  </div><!-- /.row -->
+                </form>
+              </div><!-- /.contact-panel -->
+            </section><!-- /.contact layout 4 -->
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+
+    {% endblock content %}

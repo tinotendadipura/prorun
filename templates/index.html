@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+ {% load static  %}
+
+ {% block title %}
+ 
+Prorun Fencing Company
+
+{% endblock title %}
+
+
+
+{% block content %}
+    <!-- ============================
+        Slider
+    ============================== -->
+    <section class="slider">
+      <div class="slick-carousel carousel-arrows-light carousel-dots-light m-slides-0"
+        data-slick='{"slidesToShow": 1, "arrows": true, "dots": true, "speed": 700,"fade": true,"cssEase": "linear"}'>
+        <div class="slide-item bg-overlay align-v-h">
+          <div class="bg-img"><img src="{%static './assets/images/sliders/1.jpeg'%}" alt="slide img"></div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <div class="slide__content">
+                  <span class="slide__subtitle">Your one stop fencing company.</span>
+                  <h2 class="slide__title">Zimbabwe's leading supplier of security fence.</h2>
+                  <p class="slide__desc">We provide fencing for residential and commercial stands ,
+                    with the largest assortment of security requirements installation.
+                  </p>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <a href="{% url 'services' %}" class="btn btn__primary btn__xl mr-30">
+                      <span>Explore Our Services</span>
+                      <i class="icon-arrow-right"></i>
+                    </a>
+                    <a href="{% url 'About-Us' %}" class="btn btn__white btn__xl">
+                      More About Us!
+                    </a>
+                  </div>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-xl-7 -->
+              
+			
+			</div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+		
+		
+		
+		<div class="slide-item bg-overlay align-v-h">
+          <div class="bg-img"><img src="{%static './assets/images/sliders/2.jpeg'%}" alt="slide img"></div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <div class="slide__content">
+                  <span class="slide__subtitle">We provide durable fencing solutions.</span>
+                  <h2 class="slide__title">Smart Fencing Solutions</h2>
+                  <p class="slide__desc">Looking for quality and affordable service?
+                  </p>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <a href="{% url 'services' %}" class="btn btn__primary btn__xl mr-30">
+                      <span>Explore Our Services</span>
+                      <i class="icon-arrow-right"></i>
+                    </a>
+                    <a href="{% url 'About-Us' %}" class="btn btn__white btn__xl">
+                      More About Us!
+                    </a>
+                  </div>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-xl-7 -->
+              
+			
+			</div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+		
+		
+		
+        <div class="slide-item bg-overlay align-v-h">
+          <div class="bg-img"><img src="{%static './assets/images/sliders/3.jpeg'%}" alt="slide img"></div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <div class="slide__content">
+                  <span class="slide__subtitle">Home Security Products Everyone Can Install, Afford, And Use!</span>
+                  <h2 class="slide__title">Valuable Security solution for  your home.</h2>
+                  <p class="slide__desc">We provide security fencing for residential and commercial stands
+                   
+                  </p>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <a href="{% url 'services' %}" class="btn btn__primary btn__xl mr-30" >
+                      <span>Explore Our Services</span>
+                      <i class="icon-arrow-right"></i>
+                    </a>
+                    <a href="{% url 'About-Us' %}" class="btn btn__white btn__xl">
+                      More About Us!
+                    </a>
+                  </div>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-xl-7 -->
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 offset-xl-2 d-none d-xl-block">
+                <div class="cta-banner">
+                  <h4 class="cta__title">Our Missoin</h4>
+                  <img src="{%static './assets/images/cta/hex-3.jpg'%}" alt="cta__img" class="cta__img">
+                  <p class="cta__desc">It is to become a leading professional security service provider within the sub-sahran region and beyond.
+                  </p>
+                  <a href="services.html" class="btn btn__primary btn__link">
+                    <i class="icon-arrow-right icon-filled"></i>
+                    <span>Protect Your Home</span>
+                  </a>
+                </div>
+              </div><!-- /.col-xl-2 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+      </div><!-- /.carousel -->
+    </section><!-- /.slider -->
+
+    <!-- ========================
+      About Layout 1
+    =========================== -->
+    <section class="about-layout1 pt-130 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
+            <div class="heading-layout2">
+              <h3 class="heading__title mb-50">Secure your livestock and protect your property against intruders.</h3>
+            </div><!-- /heading -->
+            <div class="about__Text">
+              <p class="heading__desc mb-20">Realising the need for fencing and security had risen and continues to rise in Zimbabwe, 
+			  Prorun Fencing Contractors was birthed to provide the needed security services to all home owners and business owners.</p>
+              
+              
+              <div class="d-flex align-items-center flex-wrap mt-10 mb-40">
+                <a href="/" class="btn btn__primary btn__xl my-1 mr-30">
+                  <span>Contact Us</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div><!-- /.col-xl-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
+            <div class="video-banner-layout2 mb-50">
+              <img src="{%static './assets/images/about/1.jpeg'%}" alt="about">
+              
+            </div><!-- /.video-banner -->
+          </div><!-- /.col-xl-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About Layout 1 -->
+
+    <!-- ========================
+        Services Layout 1
+    =========================== -->
+    <!-- ========================
+      About Layout 3
+    =========================== -->
+    <section class="about-layout3 bg-dark pb-90">
+      <div class="container">
+       
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
+            <div class="about__text">
+              <div class="heading-layout1 heading-light mb-50">
+                
+                <h3 class=" heading__title mb-40">Providing value to our clients through ongoing product innovation.</h3>
+                <p class="heading__desc">We are constantly seeking the best professional people from the field of fencing.</p>
+              </div><!-- /heading -->
+              
+            </div>
+          </div><!-- /.col-xl-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
+            <div class="about__img">
+              <img src="{%static './assets/images/about/4.jpeg'%}" alt="about">
+              <div class="cta-banner">
+                <h3 class="cta__subtitle">Protect Your Home!</h3>
+                <h4 class="cta__title">All The Essentials To Help Give You Peace Of Mind.</h4>
+                <ul class="list-items-layout5 list-unstyled mb-0">
+                  <li class="list__item">Easy to setup and use</li>
+                  
+                </ul>
+              </div>
+            </div><!-- /.about__img -->
+          </div><!-- /.col-xl-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About Layout 3 -->
+
+    <!-- ========================
+      About Layout 4
+    =========================== -->
+    <section class="about-layout4 bg-dark pt-0 pb-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+            <div class="about__img">
+              <img src="{%static './assets/images/about/5.jpeg'%}" alt="about">
+              <div class="cta-banner cta-banner-primary">
+                <h3 class="cta__subtitle">Just Don’t Worry.</h3>
+                <h4 class="cta__title">We Take Care Of Everything For Your Home!</h4>
+                <ul class="list-items-layout5 list-unstyled mb-0">
+                  <li class="list__item">Easy to setup and use</li>
+                  
+                </ul>
+              </div>
+            </div><!-- /.about__img -->
+          </div><!-- /.col-xl-5 -->
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6 offset-xl-1">
+            <div class="about__text">
+              <div class="heading-layout1 heading-light mb-60">
+                
+                <h3 class=" heading__title mb-40">Trusted security fence that Give Meaning To Security .</h3>
+                <p class="heading__desc mb-30">Our experts have undertaken system projects of all sizes and scopes,
+                  whether
+                  you need security system integration for your corporate office or retail store, corporate stand or residential stand .</p>
+                
+              </div><!-- /heading -->
+              
+            </div>
+          </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About Layout 4 -->
+
+    <!-- ========================
+      About Layout 5
+    =========================== -->
+    <section class="about-layout5 bg-dark pt-0 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
+            <div class="about__text">
+              <div class="heading-layout1 heading-light mb-50">
+                
+                <h3 class=" heading__title mb-40">Solutions That Reduce Cost & Increase Business Efficiency.</h3>
+                <p class="heading__desc">We will design, install, maintain and upgrade solutions to meet businesses'
+                  specific needs and budgets, from large enterprises to local business security platforms, from simple
+                  camera solutions for small offices to complex enterprise-class video surveillance systems for large
+                  campuses.
+                </p>
+              </div><!-- /heading -->
+              
+              
+            </div>
+          </div><!-- /.col-xl-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
+            <div class="video-banner-layout3 mb-50">
+              <img src="{%static './assets/images/about/6.jpeg'%}" alt="about">
+              
+            </div> <!-- /.video-banner -->
+          </div><!-- /.col-xl-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About Layout 5 -->
+    <!-- ======================
+      Portfolio
+      <!-- ======================
+     Clients
+     <!-- ==========================
+        contact layout 3
+    =========================== -->
+    <br>
+
+
+ {% endblock content %}

@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+ {% load static  %}
+
+ {% block title %}
+ 
+Our Work | Prorun 
+
+{% endblock title %}
+
+
+
+{% block content %}
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title-layout2 page-title-light bg-overlay text-center">
+      <div class="bg-img"><img src="{%static './assets/images/banners/7.jpg'%}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
+            <h1 class="pagetitle__heading">Products</h1>
+            <p class="pagetitle__desc mx-auto">As one of the premier providers of smart home technology, we are
+              recognized throughout the industry for our products. Don’t worry about any thing, security experts will
+              install your new system, activate it, and show you how to use it.</p>
+            <div class="d-flex flex-wrap align-items-center justify-content-center">
+              <a href="pricing.html" class="btn btn__white my-2 mr-30">
+                <span>See What It Costs</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+              <a href="get-quote.html" class="btn btn__white btn__outlined my-2">
+                Protect My Home
+              </a>
+            </div>
+          </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+    <div class="breadcrumb-area border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav>
+              <ol class="breadcrumb  mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+              </ol>
+            </nav>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.breadcrumb-area -->
+
+    <!-- ========================
+       shop 
+    =========================== -->
+    <section class="shop-grid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-lg-9">
+            <div class="sorting-options d-flex flex-wrap justify-content-between align-items-center mb-30">
+              <strong class="color-secondary">Showing 1:9 of 45 product</strong>
+              <select>
+                <option selected="" value="0">Sort by latest</option>
+                <option value="1">Sort by Popular</option>
+                <option value="2">Sort by highest Price </option>
+                <option value="3">Sort by lowest Price </option>
+              </select>
+            </div>
+            <div class="row">
+              <!-- Product item #1 -->
+			  
+			  {% for product in all_products %}
+			  
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <img src="
+					{% if product.display_image %}
+					{{product.display_image.url}}
+					{% endif  %}
+					" alt="Product" loading="lazy">
+                    <div class="product__action">
+                      <button class="btn btn__primary">
+                        <i class="icon-cart"></i>
+                      </button>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title"><a href="#">{{product.product_tittle}}</a></h4>
+                    <span class="product__price">{{product.product_price}}</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+             {% endfor %}
+			
+			</div><!-- /.row -->
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <nav class="pagination-area">
+                  <ul class="pagination justify-content-center">
+                    <li><a class="current" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                  </ul>
+                </nav><!-- /.pagination-area -->
+              </div><!-- /.col-lg-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-lg-9 -->
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <aside class="sidebar-layout2">
+              <div class="widget widget-categories-layout2">
+                <h5 class="widget__title">Categories</h5>
+                <div class="widget-content">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#">Barbed wire fencing</a></li>
+                    <li><a href="#"> Diamond Mesh</a></li>
+                    <li><a href="#">Bonox Fencing</a></li>
+                    <li><a href="#">Field Fencing</a></li>
+                    <li><a href="#">Welded Mesh</a></li>
+                    <li><a href="#">Hexagonal Wire</a></li>
+                  </ul>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-categories -->
+              <div class="widget widget-search">
+                <h5 class="widget__title">Search</h5>
+                <div class="widget__content">
+                  <form class="widget__form-search">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn" type="submit"><i class="icon-search"></i></button>
+                  </form>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-search -->
+              <div class="widget widget-poducts">
+                <h5 class="widget__title">Best Sellers</h5>
+                <div class="widget__content">
+                  <!-- product item #1 -->
+                  
+				  {% for product in all_products %}
+				  <div class="widget-product-item d-flex align-items-center">
+                    <div class="widget-product__img">
+                      <a href="#"><img src="
+					  
+					  {% if product.display_image %}
+					{{product.display_image.url}}
+					{% endif  %}
+					  " alt="Product" loading="lazy"></a>
+                    </div><!-- /.product-product-img -->
+                    <div class="widget-product__content">
+                      <h5 class="widget-product__title"><a href="#">{{product.product_tittle}}</a></h5>
+                      <span class="widget-product__price">{{product.product_price}}</span>
+                    </div><!-- /.widget-product-content -->
+                  </div><!-- /.widget-product-item -->
+                  <!-- product item #2 -->
+                  {% endfor %}
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-poducts -->
+              <div class="widget widget-filter">
+                <h5 class="widget__title">Pricing Filter</h5>
+                <div class="widget__content">
+                  <div id="rangeSlider"></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="price-output d-flex align-items-center">
+                      <label for="rangeSliderResult">Price: </label>
+                      <input type="text" id="rangeSliderResult" readonly>
+                    </div>
+                    <button class="btn__filter">Filter</button>
+                  </div>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-filter -->
+              <div class="widget widget-tags">
+                <h5 class="widget__title">Tags</h5>
+                <div class="widget-content">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Responsive</a></li>
+                    <li><a href="#">Fresh</a></li>
+                    <li><a href="#">Modern</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Business</a></li>
+                  </ul>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-Tags -->
+            </aside><!-- /.sidebar -->
+          </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.shop -->
+
+    
+   {% endblock content %}

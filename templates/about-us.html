@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+ {% load static  %}
+
+ {% block title %}
+ 
+About Us | Prorun 
+
+{% endblock title %}
+
+
+
+{% block content %}
+    
+	<!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title-layout1 page-title-light bg-overlay text-center">
+      <div class="bg-img"><img src="{%static './assets/images/about/bg-ground.jpeg'%}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="pagetitle__heading">About Us</h1>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <div class="breadcrumb-area border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav>
+              <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/">Company</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+              </ol>
+            </nav>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.breadcrumb-area -->
+
+    <!-- ========================
+      About Layout 1
+    =========================== -->
+<!-- ========================
+      About Layout 2
+    =========================== -->
+    <section class="about-layout2 pt-0">
+      <div class="container-fluid px-0">
+        <div class="row row-gutter-0">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 banner-img">
+            <div class="bg-img">
+              <img src="{%static './assets/images/about/5.jpeg'%}" alt="about" class="w-100">
+            </div>
+            <div class="testimonials-box">
+              <div class="testimonials-layout1 testimonials-light">
+                <div class="slick-carousel carousel-arrows-light carousel-dots-light"
+                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": false, "arrows": true, "dots": false}'>
+                  <!-- Testimonial #1 -->
+                  <div class="testimonial-item">
+                    <h3 class="testimonial__title">The technician was professional, educational and thorough in both the
+                      installation process and walking us thru features of system. Also, easy to work with and
+                      absolutely no issues!!
+                    </h3>
+                    <div class="testimonial__meta">
+                      <div class="testimonial__thmb">
+                        <img src="{%static './assets/images/about/profile.png'%}" alt="author thumb">
+                      </div><!-- /.testimonial-thumb -->
+                      <div>
+                        <h4 class="testimonial__meta-title">Martin Muzawazi</h4>
+                        <p class="testimonial__meta-desc">Harare , Ruva</p>
+                      </div>
+                    </div><!-- /.testimonial-meta -->
+                  </div><!-- /. testimonial-item -->
+                  <!-- Testimonial #2 -->
+                  <div class="testimonial-item">
+                    <h3 class="testimonial__title">The technician was professional, educational and thorough in both the
+                      installation process and walking us thru features of system. Also, easy to work with and
+                      absolutely no issues!!
+                    </h3>
+                    <div class="testimonial__meta">
+                      <div class="testimonial__thmb">
+                        <img src="{%static './assets/images/about/profile.png'%}" alt="author thumb">
+                      </div><!-- /.testimonial-thumb -->
+                      <div>
+                        <h4 class="testimonial__meta-title">Joshua Matambo</h4>
+                        <p class="testimonial__meta-desc">Murehwa Center</p>
+                      </div>
+                    </div><!-- /.testimonial-meta -->
+                  </div><!-- /. testimonial-item -->
+                </div><!-- /.slick-carousel -->
+              </div><!-- /.testimonials-layout1 -->
+            </div>
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="inner-padding">
+              <div class="about-content">
+                <div class="heading-layout2">
+                  <h3 class="heading__title mb-30">Your Security Our Concern </h3>
+                  <p class="heading__desc mb-30">
+				  
+				  To be Zimbabwe's leading supplier of security
+fence providing you with tight security services for
+both residential and commercial stands around
+Zimbabwe.
+
+				  
+				  </p>
+                  <p class="heading__desc mb-50">Pro Run Enterprise originated in a need to fill the
+gap of security in Zimbabwe. Its main aim is to
+provide its durable services at an affordable price.
+Helping our customers to have best service is
+what we value by providing them good quality
+products.</p>
+                </div><!-- /heading -->
+                <ul class="list-items-layout2 list-unstyled mt-20">
+                  <li class="list__item">We provide home security (residential stands) fencing.</li>
+                  <li class="list__item">Farm security fencing, padocks etc.</li>
+                  <li class="list__item">Commercial stands security fencing, many more</li>
+                </ul>
+                <div class="d-flex align-items-center flex-wrap mb-40">
+                  <a href="{% url 'contact-us' %}" class="btn btn__primary btn__xl mr-30">
+                    <span class="px-1">Contact us </span>
+                    <i class="icon-arrow-right px-1"></i>
+                  </a>
+                  <a href="{% url 'services' %}" class="btn btn__secondary btn__link">
+                    <span>Check All Services</span>
+                    <i class="icon-arrow-right icon-outlined"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About Layout 2 -->
+
+    
+
+    <!-- ======================
+     Clients
+    ========================= -->
+       <!-- ======================
+     fancyboxs layout1
+    ========================= -->
+    <section class="fancyboxs-layout1 fancybox-light bg-primary pb-0">
+      <div class="container">
+        <div class="row heading heading-light mb-100">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h3 class="heading__title mb-30">
+We are your trusted fencing company.
+			  </h3>
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <p class="heading__desc mb-30">Our main aim is to be recognized
+throughout the country through our product
+service and customer satisfaction. We have
+professional team which is so passionate about
+service delivery that every tender motivates them
+to keep improving for the best.</p>
+            
+            <div class="d-flex align-items-center flex-wrap">
+              <a href="#" class="btn btn__white px-4 mr-30">
+                <span>Discover More Info</span>
+                <i class="icon-arrow-right ml-20"></i>
+              </a>
+              <div class="phone__number phone__number-light">
+                <div class="phone__icon">
+                  <i class="icon-phone"></i>
+                </div>
+                <div>
+                  <span class="email__link d-block">Call 24HR / 7Days</span>
+                  <a class="phone__link d-block mt-2 mb-0" href="tel:+263719135161">+263 719135161</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      
+	
+	</section><!-- /.fancyboxs layout1 -->
+
+    
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    {% endblock content %}
+ 

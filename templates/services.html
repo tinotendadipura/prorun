@@ -1,0 +1,309 @@
+{% extends 'base.html' %}
+ {% load static  %}
+
+ {% block title %}
+ 
+Services | Prorun 
+
+{% endblock title %}
+
+
+
+{% block content %}
+    
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title-layout2 page-title-light bg-overlay">
+      <div class="bg-img"><img src="{%static './assets/images/services/bg.jpeg'%}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+            <h1 class="pagetitle__heading">Your one stop fencing service provider.</h1>
+            <p class="pagetitle__desc">We provide security fencing , we fix and supply for residential homes , schools, hospitals and all kinds of business that may require fencing.
+              </p>
+            <div class="d-flex flex-wrap align-items-center">
+              <a href="pricing.html" class="btn btn__white my-2 mr-30">
+                <span>See What It Costs</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+              <a href="get-quote.html" class="btn btn__white btn__outlined my-2">
+                Prorun Services
+              </a>
+            </div>
+          </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+    <div class="breadcrumb-area border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav>
+              <ol class="breadcrumb  mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Our </a></li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+              </ol>
+            </nav>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.breadcrumb-area -->
+
+    <!-- ========================
+        Services Layout 1
+    =========================== -->
+    <section class="services-layout1 pt-130 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-60">
+              <h3 class="heading__title">Our Service</h3>
+              <p class="heading__desc">Whether it’s protecting your possessions while you are on vacation or your family
+                while they sleep, we will give you the peace of mind that should the worst happen.</p>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <!-- service item #1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service__body">
+                <div class="service__icon">
+                  <i class="icon-cctv-camera2"></i>
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Barbed wire fencing </h4>
+                <p class="service__desc"> fence constructed from strong wire that has sharply pointed barbs at close intervals along its length.
+                </p>
+                <a href="services-single.html" class="btn btn__primary  btn__link">
+                  <i class="icon-arrow-right icon-filled"></i>
+                  <span>Read More</span>
+                </a>
+              </div><!-- /.service__body -->
+              <div class="service__img">
+                <img src="{%static './assets/images/services/barbed-2.jpg'%}" alt="service">
+              </div><!-- /.service__img -->
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- service item #2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service__body">
+                <div class="service__icon">
+                  <i class="icon-fire-alarm"></i>
+                </div><!-- /.service__icon -->
+                <h4 class="service__title"> Diamond Mesh / Chain Link</h4>
+                <p class="service__desc"> diamond mesh is constructed out of linear wires that are linked together and form a series of diamond-shaped holes.
+                </p>
+                <a href="services-single.html" class="btn btn__primary btn__link">
+                  <i class="icon-arrow-right icon-filled"></i>
+                  <span>Read More</span>
+                </a>
+              </div><!-- /.service__body -->
+              <div class="service__img">
+                <img src="{%static './assets/images/services/diamond-2.jpg'%}" alt="service">
+              </div><!-- /.service__img -->
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- service item #3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="service-item">
+              <div class="service__body">
+                <div class="service__icon">
+                  <i class="icon-home-automation"></i>
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Bonox fencing</h4>
+                <p class="service__desc">equally spaced horizontal line wire hinge joint fence in Africa, designed specifically for African Game, it is also suitable for securing livestock.
+                </p>
+                <a href="services-single.html" class="btn btn__primary  btn__link">
+                  <i class="icon-arrow-right icon-filled"></i>
+                  <span>Read More</span>
+                </a>
+              </div><!-- /.service__body -->
+              <div class="service__img">
+                <img src="{%static './assets/images/services/bonox.jpg'%}" alt="service">
+              </div><!-- /.service__img -->
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- service item #4 -->
+          
+		
+		</div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Services Layout 1 -->
+
+  
+       <!-- ==========================
+        contact layout 3
+    =========================== -->
+     <section class="contact-layout3 bg-overlay bg-overlay-primary bg-overlay-primary-gradient">
+      <div class="bg-img"><img src="{%static './assets/images/banners/5.jpg'%}" alt="banner"></div>
+      <div class="container">
+        <div class="contact-panel p-0">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-7">
+              <form class="contact-panel__form" method="post"  id="contactForm">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h4 class="contact-panel__title">Request A Quote</h4>
+                    <p class="contact-panel__desc mb-30">Please complete the form below, to request a quote, and we’ll
+                      be in touch. Or you can call us <strong class="color-secondary">(+263) 71 913 5161</strong> and our
+                      specialists will provide the
+                      necessary help!
+                    </p>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group float-label">
+                      <label for="homeBussiness">Home Or Business?</label>
+                      <select id="homeBussiness" class="form-control">
+                        <option>For Home</option>
+                        <option>For Business</option>
+                      </select>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group float-label">
+                      <label for="Industry">Industry:</label>
+                      <select id="Industry" class="form-control">
+                        <option>Commercial Buildings</option>
+                        <option>Commercial Buildings</option>
+                      </select>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group float-label">
+                      <label for="size">Yard Size:</label>
+                      <select id="size" class="form-control">
+                        <option>Small (1-5 locations)</option>
+                        <option>large (6-10 locations)</option>
+                      </select>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group float-label">
+                      <label for="own">Own Or Rent?</label>
+                      <select id="own" class="form-control">
+                        <option>I'm representing occupant</option>
+                        <option>other</option>
+                      </select>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Email Address">
+                    </div>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-12">
+                    
+					
+					<button type="submit" class="btn btn__secondary btn__xl">
+                      <i class="icon-arrow-right icon-filled"></i> <span>Submit Request</span>
+                    </button>
+                    <div class="contact-result"></div>
+                  </div><!-- /.col-lg-12 -->
+                </div><!-- /.row -->
+              </form>
+            </div><!-- /.col-lg-7 -->
+            <div class="col-sm-12 col-md-12 col-lg-5">
+              <div class="packages-wrapper">
+                <div class="slick-carousel m-slides-0"
+                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": false, "dots": true, "autoplay": true}'>
+                  <!-- pricing item #1-->
+                  <div class="h-100">
+                    <div class="pricing-package">
+                      <div class="package__body">
+                        <h4 class="package__title">Starter Plan</h4>
+                        <p class="package__desc">Our highly trained technicians will set-up your security system so you
+                          don’t
+                          have to. They show you how to work your equipment.</p>
+                        <div class="d-flex mb-40">
+                          <<img src="{%static './assets/images/about/hex-3.jpg'%}" alt="about">
+                        </div>
+                        <ul class="package__list list-items-layout4 list-unstyled">
+                          <li class="list__item">High Tensile streght</li>
+                          <li class="list__item">With stands High Temprature</li>
+						  <li class="list__item">Rust Resistant</li>
+                        </ul>
+                      </div><!-- /.package__body -->
+                      <div class="package__footer">
+                        
+                        <a href="#" class="btn btn__secondary btn__xl">
+                          <span>Get Started Now</span>
+                          <i class="icon-arrow-right"></i>
+                        </a>
+                      </div><!-- /.package__footer -->
+                    </div><!-- /.pricing-package -->
+                  </div>
+                  <!-- pricing item #2-->
+                  <div class="h-100">
+                    <div class="pricing-package">
+                      <div class="package__body">
+                        <h4 class="package__title">High Quality Fence</h4>
+                        <p class="package__desc">Our highly trained technicians will set-up your security system so you
+                          don’t
+                          have to. They show you how to work your equipment.</p>
+                        <div class="d-flex mb-40">
+                          <img src="{%static './assets/images/about/barbed-4.jpg'%}" alt="about">
+                        </div>
+                        <ul class="package__list list-items-layout4 list-unstyled">
+                          <li class="list__item">High Tensile streght</li>
+                          <li class="list__item">With stands High Temprature</li>
+						  <li class="list__item">Rust Resistant</li>
+                        </ul>
+                      </div><!-- /.package__body -->
+                      
+                    </div><!-- /.pricing-package -->
+                  </div>
+                  <!-- pricing item #3-->
+                  <div class="h-100">
+                    <div class="pricing-package">
+                      <div class="package__body">
+                        <h4 class="package__title">Different Shapes and Sizes</h4>
+                        <p class="package__desc">Our highly trained technicians will set-up your security system so you
+                          don’t
+                          have to. They show you how to work your equipment.</p>
+                        <div class="d-flex mb-40">
+                          <img src="{%static './assets/images/about/Chain-Link-Fence9.webp'%}" alt="about">
+                        </div>
+                        <ul class="package__list list-items-layout4 list-unstyled">
+                          <li class="list__item">High Tensile streght</li>
+                          <li class="list__item">With stands High Temprature</li>
+						  <li class="list__item">Rust Resistant</li>
+                        </ul>
+                      </div><!-- /.package__body -->
+                      <div class="package__footer">
+                        
+                        <a href="#" class="btn btn__secondary btn__xl">
+                          <span>Get Started Now</span>
+                          <i class="icon-arrow-right"></i>
+                        </a>
+                      </div><!-- /.package__footer -->
+                    </div><!-- /.pricing-package -->
+                  </div>
+                </div><!-- /.carousel-->
+              </div><!-- /.packages-rapper -->
+            </div><!-- /.col-lg-5 -->
+          </div><!-- /.contact-panel -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.contact layout 3 -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    {% endblock content %}
